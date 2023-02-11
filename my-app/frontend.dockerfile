@@ -1,5 +1,5 @@
 # Stage 0 - Build Frontend Assets
-FROM --platform=linux/amd64 node:19.6.0-alpine as build
+FROM node:19.6.0-alpine as build
 
 WORKDIR /app
 COPY my-app/package*.json ./

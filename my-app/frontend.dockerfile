@@ -4,7 +4,7 @@ FROM node:19.6.0-alpine as build
 WORKDIR /app
 COPY /package*.json ./
 RUN npm install
-COPY my-app/ .
+COPY / .
 RUN npm run build
 
 # Stage 1 - Serve Frontend Assets

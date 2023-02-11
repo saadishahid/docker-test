@@ -2,7 +2,7 @@
 FROM node:19.6.0-alpine as build
 
 WORKDIR /app
-COPY my-app/package*.json ./
+COPY /my-app/package*.json ./
 RUN npm install
 COPY my-app/ .
 RUN npm run build
